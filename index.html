@@ -10,24 +10,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">-->
   <link rel="stylesheet" href="assets/css/main.css" />
+
+  <script> 
+    function git() { 
+      window.open("https://github.com/GabrielSchell", '_blank').focus();
+    }
+    function linkedin() { 
+      window.open("https://www.linkedin.com/in/gabriel-schell/", '_blank').focus();
+    }
+</script> 
+
+
 </head>
 
 <body>
-  <div style="position: absolute; width:25vw; height:17.5vh; top: 43.75vh ; left: 37.5vw;" class="container" >
-    <p>
-    <h1 style="text-align:center;">Hello ! 👋</h1>
-    </p>
+  <div id="welcome-cont" class="container" >
+    <h1 id="welcome-child" style="opacity: 0.8;color: #fff;">Hello ! 👋</h1>
   </div>
 
-  
-
   <div id="container" style="position: absolute;z-index: -2; overflow: hidden;">
-        <div id="circle-small" style="top: 35vh ;"></div>
-        <div id="circle-medium" style="top: 20vh ;"></div>
-        <div id="circle-large" style="top: 5vh ;"></div>
-        <div id="circle-xlarge" style="top: -10vh ;"></div>
-        <div id="circle-xxlarge" style="top: -25vh ;"></div>
         <div id="circle-xxxlarge" style="top: -40vh ;"></div>
+        <div id="circle-xxlarge" style="top: -25vh ;"></div>
+        <div id="circle-xlarge" style="top: -10vh ;"></div>
+        <div id="circle-large" style="top: 5vh ;"></div>
+        <div id="circle-medium" onclick="linkedin()" style="top: 20vh ;cursor: pointer;"></div>
+        <div id="circle-small" onclick="git()" style="top: 35vh; cursor: pointer;">
+        </div>
   </div>
 </body>
 

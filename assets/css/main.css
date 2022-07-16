@@ -1,26 +1,26 @@
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat-Regular.ttf) format('truetype'),
-  url(../fonts/Montserrat-Black.ttf) format('truetype'),
-  url(../fonts/Montserrat-Black.ttf) format('truetype'),
-  url(../fonts/Montserrat-BlackItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-Bold.ttf) format('truetype'),
-  url(../fonts/Montserrat-BoldItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-ExtraBold.ttf) format('truetype'),
-  url(../fonts/Montserrat-ExtraBoldItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-ExtraLight.ttf) format('truetype'),
-  url(../fonts/Montserrat-ExtraLightItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-Italic-VariableFont_wght.ttf) format('truetype'),
-  url(../fonts/Montserrat-Italic.ttf) format('truetype'),
-  url(../fonts/Montserrat-Light.ttf) format('truetype'),
-  url(../fonts/Montserrat-LightItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-Medium.ttf) format('truetype'),
-  url(../fonts/Montserrat-MediumItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-SemiBold.ttf) format('truetype'),
-  url(../fonts/Montserrat-SemiBoldItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-Thin.ttf) format('truetype'),
-  url(../fonts/Montserrat-ThinItalic.ttf) format('truetype'),
-  url(../fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+    url(../fonts/Montserrat-Black.ttf) format('truetype'),
+    url(../fonts/Montserrat-Black.ttf) format('truetype'),
+    url(../fonts/Montserrat-BlackItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Bold.ttf) format('truetype'),
+    url(../fonts/Montserrat-BoldItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraBold.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraBoldItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraLight.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraLightItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Italic-VariableFont_wght.ttf) format('truetype'),
+    url(../fonts/Montserrat-Italic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Light.ttf) format('truetype'),
+    url(../fonts/Montserrat-LightItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Medium.ttf) format('truetype'),
+    url(../fonts/Montserrat-MediumItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-SemiBold.ttf) format('truetype'),
+    url(../fonts/Montserrat-SemiBoldItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Thin.ttf) format('truetype'),
+    url(../fonts/Montserrat-ThinItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -28,11 +28,13 @@
 h1 {
   font-family: Montserrat;
   font-size: 2em;
+  margin:0;
 }
+
 body {
   font-family: Montserrat;
   font-size: 1.5em;
-  margin:0 0 0 0 ;
+  margin: 0 0 0 0;
 }
 
 a:link {
@@ -129,18 +131,48 @@ div.navbar-dropdown {
   }
 }
 
+#welcome-cont {
+  position: absolute;
+  --contwidth: 20vw;
+  --contheight: calc(var(--contwidth)/4);
+  width: var(--contwidth);
+  height: var(--contheight);
+  top: calc(50vh - (var(--contheight))/2);
+  left: calc(50vw - (var(--contwidth))/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-child {
+  position: relative;
+  --fontsi: calc(var(--contheight)*0.5);
+  font-size: var(--fontsi);
+  text-align: center;
+}
+
 #container {
-  background: rgb(181,137,0);
-  background: -moz-linear-gradient(135deg, rgba(181,137,0,1) 0%, rgba(203,75,22,1) 17%, rgba(220,50,47,1) 33%, rgba(211,54,130,1) 50%, rgba(108,113,196,1) 66%, rgba(42,161,152,1) 83%, rgba(133,153,0,1) 100%);
-  background: -webkit-linear-gradient(135deg, rgba(181,137,0,1) 0%, rgba(203,75,22,1) 17%, rgba(220,50,47,1) 33%, rgba(211,54,130,1) 50%, rgba(108,113,196,1) 66%, rgba(42,161,152,1) 83%, rgba(133,153,0,1) 100%);
-  background: linear-gradient(135deg, rgba(181,137,0,1) 0%, rgba(203,75,22,1) 17%, rgba(220,50,47,1) 33%, rgba(211,54,130,1) 50%, rgba(108,113,196,1) 66%, rgba(42,161,152,1) 83%, rgba(133,153,0,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b58900",endColorstr="#859900",GradientType=1);
+  background: rgb(181, 137, 0);
+  background: -moz-linear-gradient(135deg, rgba(181, 137, 0, 1) 0%, rgba(203, 75, 22, 1) 17%, rgba(220, 50, 47, 1) 33%, rgba(211, 54, 130, 1) 50%, rgba(108, 113, 196, 1) 66%, rgba(42, 161, 152, 1) 83%, rgba(133, 153, 0, 1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(181, 137, 0, 1) 0%, rgba(203, 75, 22, 1) 17%, rgba(220, 50, 47, 1) 33%, rgba(211, 54, 130, 1) 50%, rgba(108, 113, 196, 1) 66%, rgba(42, 161, 152, 1) 83%, rgba(133, 153, 0, 1) 100%);
+  background: linear-gradient(135deg, rgba(181, 137, 0, 1) 0%, rgba(203, 75, 22, 1) 17%, rgba(220, 50, 47, 1) 33%, rgba(211, 54, 130, 1) 50%, rgba(108, 113, 196, 1) 66%, rgba(42, 161, 152, 1) 83%, rgba(133, 153, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b58900", endColorstr="#859900", GradientType=1);
   position: relative;
   height: 100vh;
   width: 100%;
   margin: 0px auto;
   padding: 0px auto;
 }
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 #container-inside {
   position: relative;
   min-width: 960px;
@@ -246,6 +278,7 @@ div.navbar-dropdown {
   0% {
     -webkit-transform: scale(1);
   }
+
   100% {
     -webkit-transform: scale(1.1);
   }
@@ -255,14 +288,22 @@ div.navbar-dropdown {
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.1);
   }
 }
 
 .container {
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
 }
+
+.char1-1 { transform: rotate(25.7deg); }
+.char1-2 { transform: rotate(51.42deg); }
+.char1-3 { transform: rotate(77.14deg); }
+.char1-4 { transform: rotate(102.85deg); }
+.char1-5 { transform: rotate(128.57deg); }
+.char1-6 { transform: rotate(154.28deg); }
