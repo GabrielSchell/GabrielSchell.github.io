@@ -307,6 +307,37 @@ div.navbar-dropdown {
   backdrop-filter: blur(5px);
 }
 
+:root {
+  
+}
+
+@media all and (orientation: portrait) {
+  #circle-small {
+    --csize: 15vh
+  }
+
+  #circle-medium {
+    --csize1: 30vh
+  }
+
+  #circle-large {
+    --csize2: 45vh;
+  }
+  
+  #circle-xlarge {
+    --csize3: 60vh;
+  }
+  
+  #circle-xxlarge {
+    --csize4: 75vh;
+  }
+  
+  #circle-xxxlarge {
+    --csize5: 90vh;
+  }
+}
+
+
 .char1-1 { transform: rotate(25.7deg); }
 .char1-2 { transform: rotate(51.42deg); }
 .char1-3 { transform: rotate(77.14deg); }
