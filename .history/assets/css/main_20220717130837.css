@@ -1,0 +1,311 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf) format('truetype'),
+    url(../fonts/Montserrat-Black.ttf) format('truetype'),
+    url(../fonts/Montserrat-Black.ttf) format('truetype'),
+    url(../fonts/Montserrat-BlackItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Bold.ttf) format('truetype'),
+    url(../fonts/Montserrat-BoldItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraBold.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraBoldItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraLight.ttf) format('truetype'),
+    url(../fonts/Montserrat-ExtraLightItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Italic-VariableFont_wght.ttf) format('truetype'),
+    url(../fonts/Montserrat-Italic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Light.ttf) format('truetype'),
+    url(../fonts/Montserrat-LightItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Medium.ttf) format('truetype'),
+    url(../fonts/Montserrat-MediumItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-SemiBold.ttf) format('truetype'),
+    url(../fonts/Montserrat-SemiBoldItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-Thin.ttf) format('truetype'),
+    url(../fonts/Montserrat-ThinItalic.ttf) format('truetype'),
+    url(../fonts/Montserrat-VariableFont_wght.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 2em;
+  margin:0;
+}
+
+body {
+  font-family: Montserrat;
+  font-size: 1.5em;
+  margin: 0 0 0 0;
+}
+
+a:link {
+  text-decoration: none;
+  color: #62a3ff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #7f8aff;
+}
+
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #9d70ff;
+}
+
+nav.navbar {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+a.navbar-item {
+  text-decoration: none;
+  color: #4a4a4a;
+}
+
+a.navbar-item:focus {
+  color: #4a4a4a;
+  opacity: 0.5;
+}
+
+a.navbar-item:hover {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+div.navbar-item.has-dropdown.is-hoverable:focus {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+div.navbar-item.has-dropdown.is-hoverable:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+div.navbar-dropdown:focus {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.navbardropdown:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+hr.navbar-divider {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.navbar-item.has-dropdown.is-active a.navbar-link,
+div.navbar-item.has-dropdown:focus a.navbar-link,
+div.navbar-item.has-dropdown:hover a.navbar-link {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+div.navbar-item.has-dropdown.is-active div.navbar-dropdown,
+div.navbar-item.has-dropdown:focus div.navbar-dropdown,
+div.navbar-item.has-dropdown:hover div.navbar-dropdown {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.navbar-dropdown {
+  border: none;
+}
+
+.salt {
+  -moz-font-feature-settings: "salt" 1;
+  -webkit-font-feature-settings: "salt" 1;
+  font-feature-settings: "salt" 1;
+}
+
+@media (max-width: 1440px) {
+  #banner {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  #banner {
+    width: 1440px;
+  }
+}
+
+#welcome-cont {
+  position: absolute;
+  --contwidth: 20vw;
+  --contheight: calc(var(--contwidth)/4);
+  width: var(--contwidth);
+  height: var(--contheight);
+  top: calc(50vh - (var(--contheight))/2);
+  left: calc(50vw - (var(--contwidth))/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-child {
+  position: relative;
+  --fontsi: calc(var(--contheight)*0.5);
+  font-size: var(--fontsi);
+  text-align: center;
+}
+
+#container {
+  background: rgb(181, 137, 0);
+  background: -moz-linear-gradient(135deg, rgba(181, 137, 0, 1) 0%, rgba(203, 75, 22, 1) 17%, rgba(220, 50, 47, 1) 33%, rgba(211, 54, 130, 1) 50%, rgba(108, 113, 196, 1) 66%, rgba(42, 161, 152, 1) 83%, rgba(133, 153, 0, 1) 100%);
+  background: -webkit-linear-gradient(135deg, rgba(181, 137, 0, 1) 0%, rgba(203, 75, 22, 1) 17%, rgba(220, 50, 47, 1) 33%, rgba(211, 54, 130, 1) 50%, rgba(108, 113, 196, 1) 66%, rgba(42, 161, 152, 1) 83%, rgba(133, 153, 0, 1) 100%);
+  background: linear-gradient(135deg, rgba(181, 137, 0, 1) 0%, rgba(203, 75, 22, 1) 17%, rgba(220, 50, 47, 1) 33%, rgba(211, 54, 130, 1) 50%, rgba(108, 113, 196, 1) 66%, rgba(42, 161, 152, 1) 83%, rgba(133, 153, 0, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b58900", endColorstr="#859900", GradientType=1);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
+}
+
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#container-inside {
+  position: relative;
+  min-width: 960px;
+  max-width: 1280px;
+  height: auto;
+  min-height: 100%;
+  margin: 0px auto;
+  padding: 0px auto;
+  overflow: visible;
+}
+
+#circle-small {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  animation-delay: 0s;
+  position: absolute;
+  --csize: 1800px;
+  top: 0.5vh;
+  left: calc( -1*(var(--csize)/2));
+  background: #fff;
+  width: var(--csize);
+  height: var(--csize);
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+#circle-medium {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  animation-delay: 0.3s;
+  position: absolute;
+  top: 0.5vh;
+  left: -300px;
+  background: #fff;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+#circle-large {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  animation-delay: 0.6s;
+  position: absolute;
+  top: 0.5vh;
+  left: -450px;
+  background: #fff;
+  width: 900px;
+  height: 900px;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+#circle-xlarge {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  animation-delay: 0.9s;
+  position: absolute;
+  top: 0.5vh;
+  left: -600px;
+  background: #fff;
+  width: 1200px;
+  height: 1200px;
+  border-radius: 50%;
+  opacity: 0.1;
+}
+
+#circle-xxlarge {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  animation-delay: 1.2s;
+  position: absolute;
+  top: 0.5vh;
+  left: -750px;
+  background: #fff;
+  width: 1500px;
+  height: 1500px;
+  border-radius: 50%;
+  opacity: 0.05;
+}
+
+#circle-xxxlarge {
+  -webkit-animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation: circle-small-scale 3s ease-in-out infinite alternate;
+  animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
+  animation-delay: 1.5s;
+  position: absolute;
+  top: 0.5vh;
+  left: -900px;
+  background: #fff;
+  --csize: 1800px;
+  width: var(--csize);
+  height: var(--csize);
+  border-radius: 50%;
+  opacity: 0.25;
+}
+
+@-webkit-keyframes circle-small-scale {
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  100% {
+    -webkit-transform: scale(1.1);
+  }
+}
+
+@keyframes circle-small-scale {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.container {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.char1-1 { transform: rotate(25.7deg); }
+.char1-2 { transform: rotate(51.42deg); }
+.char1-3 { transform: rotate(77.14deg); }
+.char1-4 { transform: rotate(102.85deg); }
+.char1-5 { transform: rotate(128.57deg); }
+.char1-6 { transform: rotate(154.28deg); }

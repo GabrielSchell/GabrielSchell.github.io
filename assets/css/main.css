@@ -190,11 +190,12 @@ div.navbar-dropdown {
   animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   animation-delay: 0s;
   position: absolute;
-  top: 0.5vh;
-  left: -150px;
+  --csize: 25vw;
+  top:  calc( 50vh - var(--csize)/2);
+  left: calc( -1*(var(--csize)/2));
+  width: var(--csize);
+  height: var(--csize);
   background: #fff;
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   opacity: 0.4;
 }
@@ -205,11 +206,12 @@ div.navbar-dropdown {
   animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   animation-delay: 0.3s;
   position: absolute;
-  top: 0.5vh;
-  left: -300px;
+  --csize1: 40vw;
+  top: calc( 50vh - var(--csize1)/2);
+  left: calc( -1*(var(--csize1)/2));
   background: #fff;
-  width: 600px;
-  height: 600px;
+  width: var(--csize1);
+  height: var(--csize1);
   border-radius: 50%;
   opacity: 0.3;
 }
@@ -220,11 +222,12 @@ div.navbar-dropdown {
   animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   animation-delay: 0.6s;
   position: absolute;
-  top: 0.5vh;
-  left: -450px;
+  --csize2: 55vw;
+  top: calc( 50vh - var(--csize2)/2);
+  left: calc( -1*(var(--csize2)/2));
   background: #fff;
-  width: 900px;
-  height: 900px;
+  width: var(--csize2);
+  height: var(--csize2);
   border-radius: 50%;
   opacity: 0.2;
 }
@@ -235,11 +238,12 @@ div.navbar-dropdown {
   animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   animation-delay: 0.9s;
   position: absolute;
-  top: 0.5vh;
-  left: -600px;
+  --csize3: 70vw;
+  top: calc( 50vh - var(--csize3)/2);
+  left: calc( -1*(var(--csize3)/2));
   background: #fff;
-  width: 1200px;
-  height: 1200px;
+  width: var(--csize3);
+  height: var(--csize3);
   border-radius: 50%;
   opacity: 0.1;
 }
@@ -250,13 +254,14 @@ div.navbar-dropdown {
   animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   animation-delay: 1.2s;
   position: absolute;
-  top: 0.5vh;
-  left: -750px;
+  --csize4: 85vw;
+  top: calc( 50vh - var(--csize4)/2);
+  left: calc( -1*(var(--csize4)/2));
   background: #fff;
-  width: 1500px;
-  height: 1500px;
+  width: var(--csize4);
+  height: var(--csize4);
   border-radius: 50%;
-  opacity: 0.05;
+  opacity: 0.075;
 }
 
 #circle-xxxlarge {
@@ -265,13 +270,14 @@ div.navbar-dropdown {
   animation-timing-function: cubic-bezier(0.6, 0, 0.4, 1);
   animation-delay: 1.5s;
   position: absolute;
-  top: 0.5vh;
-  left: -900px;
+  --csize5: 100vw;
+  top: calc( 50vh - var(--csize5)/2);
+  left: calc( -1*(var(--csize5)/2));
   background: #fff;
-  width: 1800px;
-  height: 1800px;
+  width: var(--csize5);
+  height: var(--csize5);
   border-radius: 50%;
-  opacity: 0.025;
+  opacity: 0.05;
 }
 
 @-webkit-keyframes circle-small-scale {
