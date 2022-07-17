@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>G.S</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">-->
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <script> 
+    function git() { 
+      window.open("https://github.com/GabrielSchell", '_blank').focus();
+    }
+    function linkedin() { 
+      window.open("https://www.linkedin.com/in/gabriel-schell/", '_blank').focus();
+    }
+</script> 
+
+onclick="location.href='assets\documents\CV.pdf';"
+
+
+</head>
+
+<body>
+  <div id="welcome-cont" class="container" >
+    <h1 id="welcome-child" style="opacity: 0.8;color: #fff;">Hello ! 👋</h1>
+  </div>
+
+  <div id="container" style="position: absolute;z-index: -2; overflow: hidden;">
+        <div id="circle-xxxlarge" style=""></div>
+        <div id="circle-xxlarge" style=""></div>
+        <div id="circle-xlarge" style=""></div>
+        <div id="circle-large" onclick="git()" style=" "></div>
+        <div id="circle-medium" onclick="linkedin()" style="cursor: pointer;"></div>
+        <div id="circle-small" onclick="cv()" style="cursor: pointer;">
+        </div>
+  </div>
+</body>
+
+</html>
