@@ -144,6 +144,43 @@ div.navbar-dropdown {
   align-items: center;
 }
 
+#welcome-cont-img {
+  pointer-events:none;
+  position: absolute;
+  --contwidth: 20vw;
+  --contheight: var(--contwidth);
+  width: var(--contwidth);
+  height: var(--contheight);
+  top: calc((50vh - (var(--contheight))*1.2));
+  left: calc(50vw - (var(--contwidth))/2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-cont-text {
+  position: absolute;
+  --contfont: 2vw;
+  --contwidth: 40vw;
+  --contheight: calc(var(--contwidth)/4);
+  width: var(--contwidth);
+  height: var(--contheight);
+  top: calc(50vh + var(--contwidth)/4 - ((var(--contheight))/2));
+  left: calc(50vw - (var(--contwidth))/2);
+  border-radius: calc((var(--contfont)));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-child-text {
+  position: relative;
+  --fontsi: calc(var(--contfont)*0.5);
+  font-size: var(--fontsi);
+  text-align: center;
+}
+
+
 #welcome-child {
   position: relative;
   --fontsi: calc(var(--contheight)*0.5);
@@ -303,6 +340,12 @@ div.navbar-dropdown {
 .container {
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+}
+
+.container-text {
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
 }
