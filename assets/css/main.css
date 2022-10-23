@@ -248,7 +248,7 @@ div.navbar-dropdown {
   --csize1: inherit ;
   --fontsi: calc(var(--csize2)*0.045);
   font-size: var(--fontsi);
-  margin-top: calc(var(--csize2)*0.45);
+  margin-top: calc(var(--csize2)*0.4);
   margin-left: calc(var(--csize2)*0.95);
   transform: rotate(90deg);
   transform-origin: 30%; 
@@ -390,13 +390,13 @@ div.navbar-dropdown {
 @media all and (orientation: portrait) {
 
   #welcome-cont-img {
-    top: calc((50vh - (var(--contheight))*1.75));
+    top: calc((50vh - (var(--contheight))*1.35));
   }
   #welcome-cont {
-    top: calc((50vh - (var(--contheight))*5));
+    top: calc((50vh - (var(--contheight))*2.5));
   }
   #welcome-cont-text {
-    top: calc((50vh - (var(--contheight))*-1.75));
+    top: calc((50vh - (var(--contheight))*-1.35));
   }
   
 
