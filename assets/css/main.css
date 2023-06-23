@@ -162,7 +162,7 @@ div.navbar-dropdown {
   position: absolute;
   --contwidth: 40vw;
   --contfont: calc(var(--contwidth)/20);
-  --contheight: calc(var(--contwidth)/4);
+  --contheight: calc(var(--contwidth)/3.25);
   width: var(--contwidth);
   height: var(--contheight);
   top: calc(50vh + var(--contwidth)/4 - ((var(--contheight))/2));
