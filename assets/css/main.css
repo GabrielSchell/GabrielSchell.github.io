@@ -223,35 +223,35 @@ div.navbar-dropdown {
 
 
 #animation {
-  --csize: inherit ;
-  --fontsi: calc(var(--csize)*0.09);
+  --csize: inherit;
+  --fontsi: calc(var(--csize)*0.25);
   font-size: var(--fontsi);
-  margin-top: calc(var(--csize)*0.40);
-  margin-left: calc(var(--csize)*0.90);
+  margin-top: calc(var(--csize)*0.25);
+  margin-left: calc(var(--csize)*0.75);
   transform: rotate(90deg);
-  transform-origin: 30%; 
+  transform-origin: 30%;
 
 }
 
 #animation1 {
-  --csize1: inherit ;
-  --fontsi: calc(var(--csize1)*0.065);
+  --csize1: inherit;
+  --fontsi: calc(var(--csize1)*0.1);
   font-size: var(--fontsi);
-  margin-top: calc(var(--csize1)*0.325);
-  margin-left: calc(var(--csize1)*0.90);
+  margin-top: calc(var(--csize1)*0.25);
+  margin-left: calc(var(--csize1)*0.82);
   transform: rotate(90deg);
-  transform-origin: 30%; 
+  transform-origin: 30%;
 
 }
 
 #animation2 {
-  --csize1: inherit ;
-  --fontsi: calc(var(--csize2)*0.045);
+  --csize1: inherit;
+  --fontsi: calc(var(--csize2)*0.075);
   font-size: var(--fontsi);
-  margin-top: calc(var(--csize2)*0.4);
-  margin-left: calc(var(--csize2)*0.95);
+  margin-top: calc(var(--csize2)*0.34);
+  margin-left: calc(var(--csize2)*0.9);
   transform: rotate(90deg);
-  transform-origin: 30%; 
+  transform-origin: 30%;
 
 }
 
@@ -387,51 +387,120 @@ div.navbar-dropdown {
 
 :root {}
 
-@media all and (orientation: portrait) {
+
+@media (max-width: 375px) {
+
 
   #welcome-cont-img {
-    top: calc((50vh - (var(--contheight))*1.35));
-  }
-  #welcome-cont {
-    top: calc((50vh - (var(--contheight))*2.5));
-  }
-  #welcome-cont-text {
-    top: calc((50vh - (var(--contheight))*-1.35));
-  }
-  
-
-  #circle-small {
-    --csize: 15vh
-  }
-
-  #circle-medium {
-    --csize1: 30vh
-  }
-
-  #circle-large {
-    --csize2: 45vh;
-  }
-
-  #circle-xlarge {
-    --csize3: 60vh;
-  }
-
-  #circle-xxlarge {
-    --csize4: 75vh;
-  }
-
-  #circle-xxxlarge {
-    --csize5: 90vh;
-  }
-
-  #welcome-cont-img{
     --contwidth: 40vw;
   }
 
-  #welcome-cont-text{
+  #welcome-cont-text {
     --contwidth: 80vw;
   }
+
+  #welcome-cont-img {
+    --contwidth: 70vw;
+    top: calc((50vh - (var(--contheight))*1.6));
+    left: calc(50vw - (var(--contwidth))/2.25);
+
+  }
+
+  #welcome-cont {
+    --contwidth: 50vw;
+    top: calc((50vh - (var(--contheight))*2.3));
+    --contheight: calc(var(--contwidth)/3);
+  }
+
+  #welcome-cont-text {
+    --contwidth: 95vw;
+    top: calc((50vh - (var(--contheight))*-0.38));
+    --contfont: calc(var(--contwidth)/12);
+    --contheight: calc(var(--contwidth)/1.3);
+  }
+
+  #circle-small {
+    --csize: 50vw;
+  }
+
+  #circle-medium {
+    --csize1: 80vw;
+  }
+
+  #circle-large {
+    --csize2: 110vw;
+  }
+
+  #circle-xlarge {
+    --csize3: 140vw;
+  }
+
+  #circle-xxlarge {
+    --csize4: 170vw;
+  }
+
+  #circle-xxxlarge {
+    --csize5: 200vw;
+  }
+
 }
+
+@media (min-width: 375px) and (max-width: 768px) {
+  #welcome-cont-img {
+    --contwidth: 45vw;
+    top: calc((50vh - (var(--contheight))*1.4));
+    left: calc(50vw - (var(--contwidth))/2.25);
+
+  }
+
+  #welcome-cont {
+    --contwidth: 20vw;
+    --contheight: calc(var(--contwidth)/3);
+    top: calc((50vh - (var(--contheight))*2));
+    left: calc(50vw - (var(--contwidth))/2.25);
+  }
+
+  #welcome-cont-text {
+    --contwidth: 75vw;
+    top: calc((50vh - (var(--contheight))*-0.5));
+    --contfont: calc(var(--contwidth)/14);
+    --contheight: calc(var(--contwidth)/2.4);
+  }
+
+  #welcome-child-text {
+    --fontsi: calc(var(--contfont)*0.4);
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #welcome-cont-img {
+    --contwidth: 30vw;
+    top: calc((50vh - (var(--contheight))*1.57));
+    left: calc(50vw - (var(--contwidth))/2.25);
+
+  }
+
+  #welcome-cont {
+    --contwidth: 20vw;
+    --contheight: calc(var(--contwidth)/3);
+    top: calc((50vh - (var(--contheight))*2));
+    left: calc(50vw - (var(--contwidth))/2.25);
+  }
+
+  #welcome-cont-text {
+    --contwidth: 75vw;
+    top: calc((50vh - (var(--contheight))*-0.5));
+    --contfont: calc(var(--contwidth)/16);
+    --contheight: calc(var(--contwidth)/2.8);
+  }
+
+  #welcome-child-text {
+    --fontsi: calc(var(--contfont)*0.4);
+  }
+
+}
+
 
 @keyframes rotate {
   0% {
