@@ -1,6 +1,7 @@
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-Regular.ttf) format('truetype'),
+  src: 
+    url(../fonts/Montserrat-Regular.ttf) format('truetype'),
     url(../fonts/Montserrat-Black.ttf) format('truetype'),
     url(../fonts/Montserrat-Black.ttf) format('truetype'),
     url(../fonts/Montserrat-BlackItalic.ttf) format('truetype'),
@@ -133,7 +134,7 @@ div.navbar-dropdown {
 
 #welcome-cont {
   position: absolute;
-  --contwidth: 20vw;
+  --contwidth: 35vw;
   --contheight: calc(var(--contwidth)/4);
   width: var(--contwidth);
   height: var(--contheight);
@@ -147,11 +148,11 @@ div.navbar-dropdown {
 #welcome-cont-img {
   pointer-events: none;
   position: absolute;
-  --contwidth: 20vw;
+  --contwidth: 40vw;
   --contheight: var(--contwidth);
   width: var(--contwidth);
   height: var(--contheight);
-  top: calc((50vh - (var(--contheight))*1.2));
+  top: calc((50vh - (var(--contheight))*1.25));
   left: calc(50vw - (var(--contwidth))/2);
   display: flex;
   justify-content: center;
@@ -160,12 +161,12 @@ div.navbar-dropdown {
 
 #welcome-cont-text {
   position: absolute;
-  --contwidth: 40vw;
+  --contwidth: 80vw;
   --contfont: calc(var(--contwidth)/20);
   --contheight: calc(var(--contwidth)/3.25);
   width: var(--contwidth);
   height: var(--contheight);
-  top: calc(50vh + var(--contwidth)/4 - ((var(--contheight))/2));
+  top: calc(50vh + var(--contwidth)/4 - ((var(--contheight))/4));
   left: calc(50vw - (var(--contwidth))/2);
   border-radius: calc((var(--contfont)));
   display: flex;
@@ -385,18 +386,67 @@ div.navbar-dropdown {
   backdrop-filter: blur(5px);
 }
 
-:root {}
+/* :root {} */
 
-@media all and (orientation: portrait) {
+@media all and (min-aspect-ratio: 3/2 ) {
 
   #welcome-cont-img {
-    top: calc((50vh - (var(--contheight))*1.35));
-  }
+    top: calc((50vh - (var(--contheight))*1.2));
+  } 
   #welcome-cont {
-    top: calc((50vh - (var(--contheight))*2.5));
+    top: calc((50vh - (var(--contheight))*0.5));
   }
   #welcome-cont-text {
-    top: calc((50vh - (var(--contheight))*-1.35));
+    top: calc((50vh - (var(--contheight))*-0.25));
+  }
+  
+
+  #circle-small {
+    --csize: 15vh
+  }
+
+  #circle-medium {
+    --csize1: 30vh
+  }
+
+  #circle-large {
+    --csize2: 45vh;
+  }
+
+  #circle-xlarge {
+    --csize3: 60vh;
+  }
+
+  #circle-xxlarge {
+    --csize4: 75vh;
+  }
+
+  #circle-xxxlarge {
+    --csize5: 90vh;
+  }
+
+  #welcome-cont{
+    --contwidth: 30vh;
+  }
+
+  #welcome-cont-img{
+    --contwidth: 40vh;
+  }
+
+  #welcome-cont-text{
+    --contwidth: 110vh;
+  }
+}
+
+@media all and (min-aspect-ratio:1) and (max-aspect-ratio:3/2) {
+  #welcome-cont-img {
+    top: calc((50vh - (var(--contheight))*1.2));
+  }
+  #welcome-cont {
+    top: calc((50vh - (var(--contheight))*0.5));
+  }
+  #welcome-cont-text {
+    top: calc((50vh - (var(--contheight))*-0.5));
   }
   
 
@@ -425,11 +475,11 @@ div.navbar-dropdown {
   }
 
   #welcome-cont-img{
-    --contwidth: 40vw;
+    --contwidth: 40vh;
   }
 
   #welcome-cont-text{
-    --contwidth: 80vw;
+    --contwidth: 70vw;
   }
 }
 
