@@ -134,7 +134,7 @@ div.navbar-dropdown {
 
 #welcome-cont {
   position: absolute;
-  --contwidth: 35vw;
+  --contwidth: 40vw;
   --contheight: calc(var(--contwidth)/4);
   width: var(--contwidth);
   height: var(--contheight);
@@ -148,11 +148,11 @@ div.navbar-dropdown {
 #welcome-cont-img {
   pointer-events: none;
   position: absolute;
-  --contwidth: 40vw;
+  --contwidth: 75vw;
   --contheight: var(--contwidth);
   width: var(--contwidth);
   height: var(--contheight);
-  top: calc((50vh - (var(--contheight))*1.25));
+  top: calc((25vh - (var(--contheight))*0.5));
   left: calc(50vw - (var(--contwidth))/2);
   display: flex;
   justify-content: center;
@@ -161,12 +161,12 @@ div.navbar-dropdown {
 
 #welcome-cont-text {
   position: absolute;
-  --contwidth: 80vw;
-  --contfont: calc(var(--contwidth)/20);
-  --contheight: calc(var(--contwidth)/3.25);
+  --contwidth: 90vw;
+  --contfont: calc(var(--contwidth)/12);
+  --contheight: calc(var(--contwidth)/1.2);
   width: var(--contwidth);
   height: var(--contheight);
-  top: calc(50vh + var(--contwidth)/4 - ((var(--contheight))/4));
+  top: calc(75vh - ((var(--contheight))/2));
   left: calc(50vw - (var(--contwidth))/2);
   border-radius: calc((var(--contfont)));
   display: flex;
@@ -386,7 +386,10 @@ div.navbar-dropdown {
   backdrop-filter: blur(5px);
 }
 
-/* :root {} */
+:root {
+  --cincrh: 15vh;
+  --cincrw: 15vw;
+}
 
 @media all and (min-aspect-ratio: 3/2 ) {
 
@@ -397,32 +400,32 @@ div.navbar-dropdown {
     top: calc((50vh - (var(--contheight))*0.5));
   }
   #welcome-cont-text {
-    top: calc((50vh - (var(--contheight))*-0.25));
+    top: calc((77vh - (var(--contheight))*0.5));
   }
   
 
   #circle-small {
-    --csize: 15vh
+    --csize: 15vw
   }
 
   #circle-medium {
-    --csize1: 30vh
+    --csize1: 30vw
   }
 
   #circle-large {
-    --csize2: 45vh;
+    --csize2: 45vw;
   }
 
   #circle-xlarge {
-    --csize3: 60vh;
+    --csize3: 60vw;
   }
 
   #circle-xxlarge {
-    --csize4: 75vh;
+    --csize4: 75vw;
   }
 
   #circle-xxxlarge {
-    --csize5: 90vh;
+    --csize5: 90vw;
   }
 
   #welcome-cont{
@@ -434,11 +437,15 @@ div.navbar-dropdown {
   }
 
   #welcome-cont-text{
-    --contwidth: 110vh;
+    --contwidth: 125vh;
+    --contfont: calc(var(--contwidth)/25);
+    --contheight: calc(var(--contwidth)/4);
+    top: calc(80vh - ((var(--contheight))/2));
+    left: calc(50vw - (var(--contwidth))/2);
   }
 }
 
-@media all and (min-aspect-ratio:1) and (max-aspect-ratio:3/2) {
+@media all and (min-aspect-ratio:1/2) and (max-aspect-ratio:3/2) {
   #welcome-cont-img {
     top: calc((50vh - (var(--contheight))*1.2));
   }
@@ -446,32 +453,36 @@ div.navbar-dropdown {
     top: calc((50vh - (var(--contheight))*0.5));
   }
   #welcome-cont-text {
-    top: calc((50vh - (var(--contheight))*-0.5));
+    top: calc((80vh - (var(--contheight))*0.5));
   }
   
 
   #circle-small {
-    --csize: 15vh
+    --csize: 15vw
   }
 
   #circle-medium {
-    --csize1: 30vh
+    --csize1: 30vw
   }
 
   #circle-large {
-    --csize2: 45vh;
+    --csize2: 45vw;
   }
 
   #circle-xlarge {
-    --csize3: 60vh;
+    --csize3: 60vw;
   }
 
   #circle-xxlarge {
-    --csize4: 75vh;
+    --csize4: 75vw;
   }
 
   #circle-xxxlarge {
-    --csize5: 90vh;
+    --csize5: 90vw;
+  }
+
+  #welcome-cont{
+    --contwidth: 25vh;
   }
 
   #welcome-cont-img{
@@ -479,7 +490,11 @@ div.navbar-dropdown {
   }
 
   #welcome-cont-text{
-    --contwidth: 70vw;
+    --contwidth: 90vw;
+    --contfont: calc(var(--contwidth)/15);
+    --contheight: calc(var(--contwidth)/1.75);
+    top: calc(80vh - ((var(--contheight))/2));
+    left: calc(50vw - (var(--contwidth))/2);
   }
 }
 
